@@ -148,12 +148,27 @@
 			</p>
 		</footer>
 		<script> 
-		var main = document. getElementById('main');
+			var nav = document.getElementsByClassName('btn');
 
-console.log(main);
+			for(i=0; i<=nav.length - 1;i++){
+console.log(nav[i])
+				nav[i].addEventListener('mouseover', function() { 
+					nav[i].style.boxShadow= '3px 3px 3px red';
+				});
+			}
 
 			
-			main.addEventListener('hover', function() {main.style.background = 'blue';})
+
+			// main.addEventListener('mouseover', function() {
+			// 	document.class.btn.style.shadow();
+			// 	shadow
+			// 	})
+			// function shadow() {
+			// 	document.style.shadow.box 
+
+			// }
+
+// console.log(main);
 
 		</script>
 	</body>
